@@ -1,0 +1,7 @@
+site_name: My Docs
+site_url: https://merajat.github.io/boxlm
+nav:
+  - Home: index.md
+theme:
+  name: readthedocs
+  highlightjs: true
