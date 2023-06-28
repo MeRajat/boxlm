@@ -1,0 +1,3 @@
+model_id: vicuana_7b_4q
+weights: weights/vicuna-7b-q4.bin
+context_limit: 512
