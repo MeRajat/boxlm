@@ -1,23 +1,39 @@
-## BoxLM 
+# BoxLM 
 
-Note: WIP 
+<b>Note: WIP </b>
 
-BoxLM is a powerful toolkit that enables users to deploy and train/finetune foundational models with ease, directly on their own infrastructure. With BoxLM, you can leverage state-of-the-art language models without worrying about your data moving out of your environment.
+#### BoxLM (Box the Large models), is a platform agnostic tool that allows users to deploy and finetune large models with ease.
 
 ## Features 
 
 - FineTune and deploy any model with single click. 
 - Keep your sensitive data within your environment, eliminating concerns about data privacy and security. 
 
+### Installation 
 
-```mermaid
-graph LR
-A([Your Infrastructure]) ---|1. Setup Environment| B(BoxLM)
-B --- |2. Import Data| C(Training Data)
-C --> D{Train or Finetune}
-D -->|Train| E((Foundational Model))
-D -->|Finetune| F(Finetuned Model)
-E -->|3. Deploy Model| G[Use in Applications]
-F -->|4. Deploy Model| G
-G --> H((AI Powered Solution))
-```
+1. From PyPI 
+                
+                pip install boxlm
+
+2. From Git Repository 
+
+                python setup.py install 
+
+
+### Finetune or transfer learning 
+
+With BoxLM, Single click fine-tuning experience 
+
+![Alt text](assets/image.png)
+
+1. Sample Command 
+   
+                boxlm fine-tune -m <model_id> -p <platform> -c <config_file>
+
+
+
+### Deploying trained model 
+
+Single click Deployment experience
+
+                boxlm deploy -m <model_id> -i <image_path> -p <platform> -c <config_file> 
